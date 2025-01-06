@@ -17,16 +17,15 @@ class Wizard {
         console.log(phrase + ', ' + this.name);
     }
     castSpell() {
-        console.log('Casting a spell, behold my power!');
+        console.log('I put a spell on you! :) ');
     }
     levelUp() {
         this.level++;
-        console.log(`Level up! New level is ${this.level}`);
+        console.log(`Level up! New level ${this.name} is ${this.level}`);
     }
 }
-const wizard = new Wizard('Merlin', 15);
+const wizard = new Wizard('Alice', 15);
 wizard.introduce('I am the mighty wizard');
 wizard.castSpell();
 wizard.levelUp(); // Level up! New level is 16
-
 //# sourceMappingURL=3.js.map

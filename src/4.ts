@@ -103,4 +103,3 @@ house.comeIn(person);
 
 console.log(house);
 
-export {};
