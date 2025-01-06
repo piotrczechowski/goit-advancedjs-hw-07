@@ -84,4 +84,3 @@ house.openDoor(person.getKey());
 house.comeIn(person);
 console.log(house);
 
-//# sourceMappingURL=4.js.map
