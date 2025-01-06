@@ -1,8 +1,3 @@
-
-# Programming Tasks
-
-This document outlines four programming tasks in TypeScript.
-
 ## Task 1  
 Create a `Student` class with three properties: `name`, `age`, and `grade`. Instead of declaring these properties in the class body, assigning them in the constructor, and then giving them values, use shorthand initialization.
 

@@ -1,39 +1,42 @@
 /*
-  Ваше завдання полягатиме у створенні двох класів – Employee та Manager.
+  ## Task 2  
+Create two classes: `Employee` and `Manager`.
 
-  Клас Employee повинен включати:
+The `Employee` class should include:
+- a `name` property accessible to everyone,
+- a `department` property accessible only within the `Employee` class,
+- a `salary` property accessible only within the `Employee` class and its subclasses.
 
-  властивість name, яка буде доступна всім.
-  властивість department, яка буде доступна лише всередині класу Employee.
-  salary, яке буде доступне лише всередині класу Employee та його підкласів.
+The `Manager` class should be a subclass of `Employee`.  
 
-
-  Клас Manager повинен бути підклас класу Employee
-
-  Необхідно реалізувати в класі Manager конструктор, який викликатиме конструктор суперкласу та збільшуватиме salary на 10000.
+Implement a constructor in the `Manager` class that calls the superclass constructor and increases the `salary` by 10,000.
 
 */
 
-class Employee {
-  // Заповніть модифікатори доступу
-  name: string;
-  department: string;
-  salary: number;
+class Employee { 
+  public name: string; 
+  private department: string; 
+  protected salary: number; 
 
   constructor(name: string, department: string, salary: number) {
     this.name = name;
     this.department = department;
     this.salary = salary;
-  }
-
-  getEmployeeDetails() {
-    return `Name: ${this.name}, Department: ${this.department}, Salary: ${this.salary}`;
-  }
 }
 
+getInfo(): string {
+  return `Employee: ${this.name}, Department: ${this.department}, Salary: ${this.salary}`;
+}
+}
+
+
+// subclass of Employee
 class Manager extends Employee {
-  // Реалізуйте конструктор та збільшіть salary на 10000
+  constructor(name: string, department: string, salary: number) {
+    super(name, department, salary + 10000);
+  }
 }
 
-
-export {};
+// Usage
+const employee = new Employee('Piotr Czech', 'IT', 50000);
+console.log(employee.getInfo());
