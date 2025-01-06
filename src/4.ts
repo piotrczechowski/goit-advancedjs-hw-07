@@ -101,5 +101,6 @@ house.openDoor(person.getKey());
 
 house.comeIn(person);
 
+console.log(MyHouse);
 
 export {};
