@@ -28,5 +28,5 @@ const wizard = new Wizard('Merlin', 15);
 wizard.introduce('I am the mighty wizard');
 wizard.castSpell();
 wizard.levelUp(); // Level up! New level is 16
-export {};
+
 //# sourceMappingURL=3.js.map
