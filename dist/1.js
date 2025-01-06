@@ -8,6 +8,5 @@ class Student {
         this.grade = grade;
     }
 }
-
+export {};
 //# sourceMappingURL=1.js.map
-
